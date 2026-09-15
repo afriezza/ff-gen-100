@@ -68,5 +68,5 @@ export default async function handler(req,res){
     if(a){ if(!detect) a.rare=[]; accounts.push(a); }
     else await new Promise(r=>setTimeout(r,400));
   }
-  res.status(200).json({success:true,total_requested:count,total_created:accounts.length,attempts_made:attempts,rare_count:accounts.filter(a=>a.rare.length).length,accounts});
+  res.status(200).json({success:true,slot:(q.slot||null),mode:"250pool",total_requested:count,total_created:accounts.length,attempts_made:attempts,rare_count:accounts.filter(a=>a.rare.length).length,accounts});
 }
