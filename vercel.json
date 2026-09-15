@@ -1,0 +1,1 @@
+{"rewrites":[{"source":"/gen","destination":"/api/gen"},{"source":"/bulk","destination":"/api/bulk"},{"source":"/patterns","destination":"/api/patterns"}]}
